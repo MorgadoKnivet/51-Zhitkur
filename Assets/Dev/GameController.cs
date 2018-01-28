@@ -71,7 +71,11 @@ public class GameController : MonoBehaviour
 		}
 	}
 
-	IEnumerator Invasao() {
+	public void Invadir() {
+		StartCoroutine(Invasao());
+	}
+
+	public IEnumerator Invasao() {
 		yield return new WaitForSeconds(SpwTime);
 
 		int rad = Random.Range(0, spwPoints.Count);

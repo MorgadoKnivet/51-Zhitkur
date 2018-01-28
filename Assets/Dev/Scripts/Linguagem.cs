@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Linguagem : MonoBehaviour {
 
-    static public bool linguagem;
-    // true = portugues | false = ingles
+    static public int linguagem;
+    // 0 = portugues | 1 = ingles | 2 = espanhol
 
 	// Use this for initialization
 	void Start () {

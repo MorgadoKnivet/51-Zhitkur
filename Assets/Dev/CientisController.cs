@@ -4,16 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class CientisController : MonoBehaviour {
 
-	int mortos = 0;
-
-	private void Update()
-	{
-		if (mortos >= 3)
-		{
-			GameOver();
-		}
-	}
-
 	private void OnTriggerEnter(Collider other)
 	{
 		if(other.gameObject.CompareTag("Demonio"))
@@ -22,11 +12,13 @@ public class CientisController : MonoBehaviour {
 
 			Memory.deadScientists++;
 
+			GetComponent<BoxCollider>().enabled = false;
+
 			if (Memory.deadScientists >= 3) {
 				Memory.gc.gameOver = true;
 			}
 
-			this.enabled = false;
+			//this.enabled = false;
 
 		}
 	}
@@ -40,9 +32,9 @@ public class CientisController : MonoBehaviour {
 
 	private void GameOver()
 	{
-		if (Linguagem.linguagem == true)
-			SceneManager.LoadScene("GameOver");
-		else if (Linguagem.linguagem == false)
-			SceneManager.LoadScene("GameOverIngles");
+		//if (Linguagem.linguagem == true)
+		//	SceneManager.LoadScene("GameOver");
+		//else if (Linguagem.linguagem == false)
+		//	SceneManager.LoadScene("GameOverIngles");
 	}
 }

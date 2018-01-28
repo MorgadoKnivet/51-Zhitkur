@@ -35,17 +35,15 @@ public class SoldierController : MonoBehaviour {
 		{
 			if (scoltingAgent)
 			{
+				Memory.gc.Invadir();
 				Destroy(gameObject);
 			}
 		}else if (other.gameObject.CompareTag("Demonio"))
 		{
-			GetComponent<Animator>().SetTrigger("Dead");
+			agent.enabled = false;
+			Memory.deadSoldier = true;
+			GetComponent<Animator>().enabled = true; //.SetTrigger("Dead");
 		}
-	}
-
-	private void OnCollisionEnter(Collision collision)
-	{
-
 	}
 
 	private void resgatarCivil(GameObject civil) {
@@ -62,6 +60,8 @@ public class SoldierController : MonoBehaviour {
 		sceneEvents.PlayDeath();
 		Memory.gc.gameOver = true;
 		Destroy(gameObject);
+
+
 	}
 
 }

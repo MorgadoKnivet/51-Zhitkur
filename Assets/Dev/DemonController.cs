@@ -39,7 +39,7 @@ public class DemonController : MonoBehaviour {
 
 	private void Update()
 	{
-		if (agent.remainingDistance <= 0) {
+		if (agent.enabled && agent.remainingDistance <= 0) {
 			//Debug.Log("chequei");
 
 			target = randList[Random.Range(0, randList.Length)];

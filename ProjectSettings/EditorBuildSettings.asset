@@ -12,14 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScenes/_MainGame.unity
     guid: 9c3d2206229db0a4f871f0f4152e3d89
   - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/0d4cfaa48126e3c4b863b2002dc0b26d
+    path: 
     guid: 0d4cfaa48126e3c4b863b2002dc0b26d
   - enabled: 0
-    path: Assets/Scenes/GameScenes/Victory.unity
+    path: 
     guid: 7e1a519bc2dfa334d8b04d2f60c80eb9
   - enabled: 0
-    path: Assets/Scenes/GameScenes/VictoryParcial.unity
+    path: 
     guid: 5f20bee897e10f145be39eaaf2786b60
   - enabled: 1
     path: Assets/Scenes/GameScenes/GameOver.unity
     guid: 09ea3af5cb2c43342ad2b546fef370eb
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Instructions.unity
+    guid: 7e2a21b24f4d06a41b8f7aac56f5fdde

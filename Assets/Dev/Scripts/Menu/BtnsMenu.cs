@@ -22,16 +22,18 @@ public class BtnsMenu : MonoBehaviour {
 
     public void BtnStart()
     {
-        SceneManager.LoadScene("_MainGame");
+        SceneManager.LoadScene("Instructions");
 
-        if(selectLingua.value==0)
+        if (selectLingua.value == 0)
         {
-            Linguagem.linguagem = true;
+            Linguagem.linguagem = 0;
         }
-        else
+        else if (selectLingua.value == 1)
         {
-            Linguagem.linguagem = false;
+            Linguagem.linguagem = 1;
         }
+        else if (selectLingua.value == 2)
+            Linguagem.linguagem = 2;
     }
 
     public void BtnFechar()

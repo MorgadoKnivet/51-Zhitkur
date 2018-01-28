@@ -1,23 +1,20 @@
 using UnityEngine;
 using UnityEngine.Video;
+using System.Collections;
 using Util;
 
 public class VideoScript : MonoBehaviour {
 
-	VideoPlayer video;
+	VideoPlayer mt;
 
 	private void Awake()
 	{
-		video = GetComponent<VideoPlayer>();
+		mt = GetComponent<VideoPlayer>();
+	}
 
-	}	
-
-	private void Update()
+	private void Start()
 	{
-		if (video.isPlaying == false) {
-			//Memory.ScenaryAnimator.SetTrigger("");
-			Destroy(gameObject);
-		}
+
 	}
 
 }

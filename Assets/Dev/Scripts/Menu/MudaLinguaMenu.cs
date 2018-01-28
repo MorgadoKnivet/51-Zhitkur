@@ -22,6 +22,9 @@ public class MudaLinguaMenu : MonoBehaviour {
         }else if (lingua.value == 0)
         {
             Portugues();
+        }else if (lingua.value == 2)
+        {
+            Espanhol();
         }
 	}
 
@@ -35,5 +38,11 @@ public class MudaLinguaMenu : MonoBehaviour {
     {
         btnStart.GetComponentInChildren<Text>().text = "Start Game";
         btnFechar.GetComponentInChildren<Text>().text = "Exit";
+    }
+
+    public void Espanhol()
+    {
+        btnStart.GetComponentInChildren<Text>().text = "Comenzar Juego";
+        btnFechar.GetComponentInChildren<Text>().text = "Cerrar Juego";
     }
 }
